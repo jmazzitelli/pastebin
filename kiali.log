@@ -1,0 +1,475 @@
+2025/05/30 19:33:00 maxprocs: Leaving GOMAXPROCS=4: CPU quota undefined
+2025-05-30T19:33:00Z INF Kiali: Version: v2.11.0-SNAPSHOT, Commit: da04b8e7c7554eb37745f20da61c66abf4970423, Go: 1.24.2
+2025-05-30T19:33:00Z DBG Kiali: Command line: [/opt/kiali/kiali -config /kiali-configuration/config.yaml]
+2025-05-30T19:33:00Z DBG Reading YAML config from [/kiali-configuration/config.yaml]
+2025-05-30T19:33:00Z DBG Additional CA bundle /kiali-cabundle/additional-ca-bundle.pem does not exist. Skipping
+2025-05-30T19:33:00Z DBG Credentials loaded from secret file [/kiali-override-secrets/login-token-signing-key/value.txt]
+2025-05-30T19:33:00Z DBG Cluster name is not set. Attempting to auto-detect the cluster name from the home cluster environment.
+2025-05-30T19:33:00Z DBG Unable to read remote secret. It may or may not exist. Error: open /kiali-remote-secret/kiali: no such file or directory. Falling back to in cluster config
+2025-05-30T19:33:00Z DBG Creating new Kiali Service Account client
+2025-05-30T19:33:00Z DBG Rest perf config QPS: 175.000000 Burst: 200
+2025-05-30T19:33:00Z DBG Auto-detected the istio cluster name to be [Kubernetes]. Updating the kiali config
+2025-05-30T19:33:00Z DBG Stopping client factory recycle chan
+2025-05-30T19:33:00Z DBG recycleChan closed when watching clients
+2025-05-30T19:33:00Z TRC Kiali Configuration:
+2025-05-30T19:33:00Z INF Using authentication strategy [anonymous]
+2025-05-30T19:33:00Z WRN Kiali auth strategy is configured for anonymous access - users will not be authenticated.
+2025-05-30T19:33:00Z INF Some validation errors will be ignored [KIA1301]. If these errors do occur, they will still be logged. If you think the validation errors you see are incorrect, please report them to the Kiali team if you have not done so already and provide the details of your scenario. This will keep Kiali validations strong for the whole community.
+2025-05-30T19:33:00Z DBG Unable to read remote secret. It may or may not exist. Error: open /kiali-remote-secret/kiali: no such file or directory. Falling back to in cluster config
+2025-05-30T19:33:00Z DBG Creating new Kiali Service Account client
+2025-05-30T19:33:00Z DBG Rest perf config QPS: 175.000000 Burst: 200
+2025-05-30T19:33:00Z INF Initializing Kiali Cache
+2025-05-30T19:33:00Z INF PromCache Enabled group=promCache
+2025-05-30T19:33:00Z DBG URL discovery for service [grafana], namespace 'istio-system'...
+2025-05-30T19:33:00Z TRC [jaeger] GRPC client info: address=[tracing.istio-system:16685], auth.type=[none] group=tracing
+2025-05-30T19:33:00Z INF Create [jaeger] GRPC client. address=[tracing.istio-system:16685] group=tracing
+2025-05-30T19:33:00Z DBG Client for service [grafana] is not Openshift, discovery url is only supported in Openshift
+2025-05-30T19:33:00Z INF Kiali will validate Istio configuration every: 1m0s
+2025-05-30T19:33:00Z INF Waiting for cluster: Kubernetes cache to sync
+2025-05-30T19:33:00Z INF All caches synced
+2025-05-30T19:33:00Z DBG Starting polling istiod(s) every 20 seconds for proxy status
+2025-05-30T19:33:00Z DBG Scraping istiod for debug info
+2025-05-30T19:33:00Z INF Starting EventSource controller=validations-controller source="channel source: 0xc0003b09a0" v=0
+2025-05-30T19:33:00Z INF Starting Controller controller=validations-controller v=0
+2025-05-30T19:33:00Z INF Starting workers controller=validations-controller v=0 worker count=1
+2025-05-30T19:33:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:33:01Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:33:01Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:33:01Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:33:01Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:33:01Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:33:01Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:33:01Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:33:01Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:33:01Z DBG URL discovery for service [grafana], namespace 'istio-system'...
+2025-05-30T19:33:01Z DBG Client for service [grafana] is not Openshift, discovery url is only supported in Openshift
+2025-05-30T19:33:01Z INF Profiler is enabled group=router
+2025-05-30T19:33:01Z INF Tracing Enabled. Initializing tracer with collector url: jaeger-collector.istio-system:4317
+2025-05-30T19:33:01Z DBG Creating OpenTelemetry grpc collector with URL jaeger-collector.istio-system:4317
+2025-05-30T19:33:01Z INF Server endpoint will start at [:20001/kiali]
+2025-05-30T19:33:01Z INF Server endpoint will serve static content from [/opt/kiali/console]
+2025-05-30T19:33:01Z INF Starting Metrics Server on [:9090]
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:oauth2-proxy:oauth2-proxy
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:details-v1
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:kiali-traffic-generator
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:productpage-v1
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:ratings-v1
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:reviews-v1
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:reviews-v2
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:bookinfo:reviews-v3
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:dex:dex
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:ingress-nginx:ingress-nginx-controller
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:grafana
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:istio-egressgateway
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:istio-ingressgateway
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:istiod
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:jaeger
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:kiali
+2025-05-30T19:33:01Z TRC validations: new config detected: Kubernetes:istio-system:prometheus
+2025-05-30T19:33:01Z TRC validations: new config detected: validation-num-workloads
+2025-05-30T19:33:02Z DBG K8s Gateway API CRDs are not installed. Required K8s Gateway API version: gateway.networking.k8s.io/v1. Gateway API will not be used.
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:bookinfo:details
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:dex:dex
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:grafana
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:ingress-nginx:ingress-nginx-controller-admission
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:ingress-nginx:ingress-nginx-controller
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:istio-egressgateway
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:istio-ingressgateway
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:istiod
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:jaeger-collector
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:kiali
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:kube-system:kube-dns
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:default:kubernetes
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:oauth2-proxy:oauth2-proxy
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:bookinfo:productpage
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:prometheus
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:bookinfo:ratings
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:kube-system:registry
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:bookinfo:reviews
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:tracing
+2025-05-30T19:33:02Z TRC validations: new config detected: SV:Kubernetes:istio-system:zipkin
+2025-05-30T19:33:02Z TRC validations: new config detected: GW:Kubernetes:bookinfo:bookinfo-gateway
+2025-05-30T19:33:02Z TRC validations: new config detected: VS:Kubernetes:bookinfo:bookinfo
+2025-05-30T19:33:02Z TRC validations: new config detected: validation-num-config:Kubernetes::
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:productpage-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-egressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v2] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali-traffic-generator] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istio-ingressgateway] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ratings-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v3] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:grafana] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:details-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:prometheus] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:kiali] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:dex] in namespace [dex]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:ingress-nginx-controller] in namespace [ingress-nginx]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:istiod] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:oauth2-proxy] in namespace [oauth2-proxy]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:jaeger] in namespace [istio-system]
+2025-05-30T19:33:02Z TRC Ignoring validation failure [&{Code:KIA1301 Message:This workload is not covered by any authorization policy Severity:warning Path:workload}] for object [/, Kind=workload:reviews-v1] in namespace [bookinfo]
+2025-05-30T19:33:02Z TRC validations: config changes found for cluster [Kubernetes], updating
+2025-05-30T19:33:02Z DBG [ValidationsReconciler] Finished reconciling in 1.77s
+2025-05-30T19:33:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:33:21Z DBG Scraping istiod for debug info
+2025-05-30T19:33:21Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:33:21Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:33:30Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:33:41Z DBG Scraping istiod for debug info
+2025-05-30T19:33:41Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:33:41Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:33:41Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:33:41Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:33:41Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:34:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:34:00Z DBG [ValidationsReconciler] Finished reconciling in 0.00s
+2025-05-30T19:34:01Z DBG Scraping istiod for debug info
+2025-05-30T19:34:01Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:01Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:10Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:34:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:34:21Z DBG Scraping istiod for debug info
+2025-05-30T19:34:21Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:34:21Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:34:21Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:34:21Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:21Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:41Z DBG Scraping istiod for debug info
+2025-05-30T19:34:41Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:41Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:34:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:35:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:35:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:35:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:35:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:35:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:35:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:35:01Z DBG Scraping istiod for debug info
+2025-05-30T19:35:01Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:35:01Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:35:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:35:21Z DBG Scraping istiod for debug info
+2025-05-30T19:35:21Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:35:21Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:35:30Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:35:41Z DBG Scraping istiod for debug info
+2025-05-30T19:35:41Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:35:41Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:35:41Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:35:41Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:35:41Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:36:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:36:00Z DBG [ValidationsReconciler] Finished reconciling in 0.01s
+2025-05-30T19:36:01Z DBG Scraping istiod for debug info
+2025-05-30T19:36:01Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:01Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:10Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:36:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:36:21Z DBG Scraping istiod for debug info
+2025-05-30T19:36:21Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:36:21Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:36:21Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:36:21Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:21Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:41Z DBG Scraping istiod for debug info
+2025-05-30T19:36:41Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:42Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:36:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:37:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:37:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:37:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:37:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:37:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:37:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:37:02Z DBG Scraping istiod for debug info
+2025-05-30T19:37:02Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:37:02Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:37:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:37:22Z DBG Scraping istiod for debug info
+2025-05-30T19:37:22Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:37:22Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:37:30Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:37:42Z DBG Scraping istiod for debug info
+2025-05-30T19:37:42Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:37:42Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:37:42Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:37:42Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:37:42Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:38:00Z TRC Expired group=promCache
+2025-05-30T19:38:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:38:00Z DBG [ValidationsReconciler] Finished reconciling in 0.00s
+2025-05-30T19:38:02Z DBG Scraping istiod for debug info
+2025-05-30T19:38:02Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:02Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:10Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:38:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:38:22Z DBG Scraping istiod for debug info
+2025-05-30T19:38:22Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:38:22Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:38:22Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:38:22Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:22Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:42Z DBG Scraping istiod for debug info
+2025-05-30T19:38:42Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:42Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:38:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:39:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:39:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:39:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:39:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:39:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:39:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:39:02Z DBG Scraping istiod for debug info
+2025-05-30T19:39:02Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:39:02Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:39:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:39:22Z DBG Scraping istiod for debug info
+2025-05-30T19:39:22Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:39:22Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:39:30Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:39:42Z DBG Scraping istiod for debug info
+2025-05-30T19:39:42Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:39:42Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:39:42Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:39:42Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:39:42Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:40:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:40:00Z DBG [ValidationsReconciler] Finished reconciling in 0.01s
+2025-05-30T19:40:02Z DBG Scraping istiod for debug info
+2025-05-30T19:40:02Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:02Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:10Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:40:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:40:22Z DBG Scraping istiod for debug info
+2025-05-30T19:40:22Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:40:22Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:40:22Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:40:22Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:22Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:42Z DBG Scraping istiod for debug info
+2025-05-30T19:40:42Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:42Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:40:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:41:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:41:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:41:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:41:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:41:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:41:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:41:02Z DBG Scraping istiod for debug info
+2025-05-30T19:41:02Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:41:02Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:41:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:41:22Z DBG Scraping istiod for debug info
+2025-05-30T19:41:22Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:41:22Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:41:30Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:41:42Z DBG Scraping istiod for debug info
+2025-05-30T19:41:42Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:41:42Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:41:42Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:41:42Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:41:43Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:42:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:42:00Z DBG [ValidationsReconciler] Finished reconciling in 0.00s
+2025-05-30T19:42:03Z DBG Scraping istiod for debug info
+2025-05-30T19:42:03Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:03Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:42:10Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:42:23Z DBG Scraping istiod for debug info
+2025-05-30T19:42:23Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:42:23Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:42:23Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:42:23Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:23Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:43Z DBG Scraping istiod for debug info
+2025-05-30T19:42:43Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:43Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:42:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:43:00Z TRC Expired group=promCache
+2025-05-30T19:43:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:43:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:43:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:43:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:43:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:43:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:43:03Z DBG Scraping istiod for debug info
+2025-05-30T19:43:03Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:03Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:43:20Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:43:23Z DBG Scraping istiod for debug info
+2025-05-30T19:43:23Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:43:23Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:43:23Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:43:23Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:23Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:43Z DBG Scraping istiod for debug info
+2025-05-30T19:43:43Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:43Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:43:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:44:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:44:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:44:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:44:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:44:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:44:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:44:03Z DBG Scraping istiod for debug info
+2025-05-30T19:44:03Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:03Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:20Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:44:20Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:44:23Z DBG Scraping istiod for debug info
+2025-05-30T19:44:23Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:44:23Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:44:23Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:44:23Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:23Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:43Z DBG Scraping istiod for debug info
+2025-05-30T19:44:43Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:43Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:44:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:45:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:45:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:45:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:45:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:45:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:45:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:45:03Z DBG Scraping istiod for debug info
+2025-05-30T19:45:03Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:03Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:45:20Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:45:23Z DBG Scraping istiod for debug info
+2025-05-30T19:45:23Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:45:23Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:45:23Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:45:23Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:23Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:43Z DBG Scraping istiod for debug info
+2025-05-30T19:45:43Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:43Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:45:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:46:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:46:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:46:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:46:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:46:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:46:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:46:03Z DBG Scraping istiod for debug info
+2025-05-30T19:46:03Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:03Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+2025-05-30T19:46:20Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:46:23Z DBG Scraping istiod for debug info
+2025-05-30T19:46:23Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:46:23Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:46:23Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:46:23Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:23Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:43Z DBG Scraping istiod for debug info
+2025-05-30T19:46:43Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:44Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:46:50Z TRC Key 'mesh' expired. Removing from store
+2025-05-30T19:47:00Z DBG [ValidationsReconciler] Started reconciling 
+2025-05-30T19:47:00Z DBG Found controlplane [istiod/istio-system] on cluster [Kubernetes].
+2025-05-30T19:47:00Z DBG Detected Istio version [1.25.1-be4b14ad8be844c5f876a41ad4437217a2e03cf8-Clean]
+2025-05-30T19:47:00Z DBG Found webhook [/istio-revision-tag-default] on cluster: [Kubernetes].
+2025-05-30T19:47:00Z TRC validations: no changes for cluster [Kubernetes], re-using
+2025-05-30T19:47:00Z DBG [ValidationsReconciler] Finished reconciling in 0.04s
+2025-05-30T19:47:04Z DBG Scraping istiod for debug info
+2025-05-30T19:47:04Z TRC Getting proxy status from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:47:04Z TRC Getting services from istiod in cluster [Kubernetes] for revision [default]
+2025-05-30T19:47:10Z TRC Key 'cluster: Kubernetes	token: xxx' expired. Removing from store
+
